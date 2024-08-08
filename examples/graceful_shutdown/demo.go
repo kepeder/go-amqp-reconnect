@@ -9,7 +9,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/AsidStorm/go-amqp-reconnect/rabbitmq"
+	"github.com/kepeder/go-amqp-reconnect/rabbitmq"
 )
 
 func main() {

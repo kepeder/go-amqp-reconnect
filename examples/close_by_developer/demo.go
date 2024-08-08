@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 
-	"github.com/AsidStorm/go-amqp-reconnect/rabbitmq"
+	"github.com/kepeder/go-amqp-reconnect/rabbitmq"
 
 	"log"
 	"sync"
