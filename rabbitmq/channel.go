@@ -127,7 +127,7 @@ func (ch *Channel) Cancel(consumer string, noWait bool) error {
 func (ch *Channel) QueueInspect(name string) (amqp.Queue, error) {
 	defer ch.mutex.Unlock()
 	ch.mutex.Lock()
-	return ch.Channel.QueueInspect(name)
+	return ch.Channel.QueueDeclarePassive(name, false, false, false, false, nil)
 }
 
 func (ch *Channel) QueueBind(name, key, exchange string, noWait bool, args amqp.Table) error {
